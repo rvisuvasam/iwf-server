@@ -1,0 +1,10 @@
+<%= form_for :wish, url: wishes_path do |f| %>
+    <p>
+      <%= f.label :description %><br>
+      <%= f.text_field :description %>
+    </p>
+    <p>
+      <%= f.submit %>
+      </p>
+<% end %>
+<%= link_to 'Back', wishes_path %>

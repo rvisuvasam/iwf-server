@@ -1,0 +1,14 @@
+<h1>Listing wishes</h1>
+
+<%= link_to 'New wish', new_wish_path %>
+<table>
+  <tr>
+    <th>Description</th>
+  </tr>
+
+  <% @wishes.each do |wish| %>
+    <tr>
+      <td><%= wish.description %></td>
+    </tr>
+  <% end %>
+</table>
